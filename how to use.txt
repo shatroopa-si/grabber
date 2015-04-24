@@ -1,0 +1,9 @@
+Steps to use the grabber:
+
+******************CAUTION: Use only in LINUX******************
+
+0. Make sure to apply proxies system wide before hand, in case needed
+1. Download all the files into one folder
+2. Run the grabber.py file using python 3
+3. Specify an already existing path where you want the site to be downloaded.
+4. Specify the website name correctly when prompted
