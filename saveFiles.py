@@ -1,8 +1,9 @@
 import os
+import urllib.request
+
 import mapper
 import crawler
 import variables
-import urllib.request
 
 def pathBuilder(path):
 	"""creates the path & saves url onto file with name = fileName"""

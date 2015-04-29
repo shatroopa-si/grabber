@@ -12,7 +12,5 @@ allPaths = []
 
 #directories
 homeDirectory = ''
-allPaths = []
-#directories = []
 
 

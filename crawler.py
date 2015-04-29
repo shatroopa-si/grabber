@@ -20,25 +20,6 @@ def addLinkToResource(link):
 		variables.resources.append(link)
 
 
-#def addDirectories(link, typ):
-#	"""add directories involved in this link to 'directories' list"""
-
-#	filePath = mapper.extractPathFromUrl(link)
-#	path = saveFiles.extractPath(filePath)[0]
-#	pathList = path.split('/')
-	
-#	for aDir in pathList:
-#		if aDir not in variables.directories and aDir != '':
-#			variables.directories.append(aDir)
-#			return True									#yes, it is a directory
-#		elif aDir != '':
-#			if typ == 'link':
-#				pass
-#			else:
-#				pass
-				
-			
-
 def genAbsoluteLink(plink, link):
 	"""generates an absolute link from relative"""
 
