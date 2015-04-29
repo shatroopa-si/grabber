@@ -62,13 +62,13 @@ def extractPath(completePath):
 	path = ''
 
 	#assign a default file name if none specified. eg: 'www.silive.in/bytepad'. It should not be an existing directory
-	if fileName == '':# or ('.' not in fileName and fileName in variables.directories):
+	if fileName == '':
 		fileName = 'index.html'
 		path = completePath
 	
 	elif '.' not in fileName and fileName in [x[1] for x in os.walk(os.getcwd())][0]:
 		fileName = 'index.html'
-		path = completePath#[: i]
+		path = completePath
 
 	elif '.' not in fileName:
 		fileName += '.html'
@@ -125,15 +125,3 @@ def save1(url, siteName):
 		#go back to home directory
 		while os.getcwd() != variables.homeDirectory + siteName:
 			os.chdir('..')
-
-#print(extractPath(mapper.extractPathFromUrl('http://silive.in/favicon.ico')))
-#print(extractPath('Home'))
-#print(extractPath(''))
-#print(extractPath('Home/afs'))
-#print(extractPath('Home/gge.geh'))
-#save1('http://silive.in/Home')
-#print(extractPath('Home.grwh'))
-#print(extractPath('Home/setgw/eg/.grwh'))
-#print(extractPath('Home/srh/'))
-#print(extractPath('Home/srh/sfjgyw'))
-#print(extractPath(mapper.extractPathFromUrl('http://learnpythonthehardway.org/book/appendixa.html')))

@@ -90,28 +90,3 @@ def extractPathFromUrl(url):
 	filePath = url[index: qIndex]
 
 	return filePath
-
-#print(extractPathFromUrl('www.facebook.com'))
-#print(extractPathFromUrl('www.facebook.com/'))
-#print(extractPathFromUrl('www.facebook.com/shatroopa.si'))
-#print(extractPathFromUrl('www.facebook.com/shatroopa.si/'))
-#print(extractPathFromUrl('www.facebook.com/shatroopa.si/has.fes'))
-#print(extractPathFromUrl('www.facebook.com/shatroopa.si/has.fes?ew'))
-#print(extractPathFromUrl('http://silive.in/Home/About'))
-#print(extractPathFromUrl('http://www.facebook.com'))
-#print(extractPathFromUrl('http://www.facebook.com/'))
-#print(extractPathFromUrl('http://www.facebook.com/shatroopa.si'))
-#print(extractPathFromUrl('http://www.facebook.com/shatroopa.si/'))
-#print(extractPathFromUrl('http://www.facebook.com/shatroopa.si/sgwe.wg'))
-#print(extractPathFromUrl('http://www.facebook.com/shatroopa.si/sgwe.wg?sv'))
-
-#print(extractPathFromUrl('https://www.facebook.com'))
-#print(extractPathFromUrl('https://www.facebook.com/'))
-#print(extractPathFromUrl('https://www.facebook.com/shatroopa.si'))
-#print(extractPathFromUrl('https://www.facebook.com/shatroopa.si/'))
-#print(extractPathFromUrl('https://www.facebook.com/shatroopa.si/fg.seg'))
-#print(extractPathFromUrl('https://www.facebook.com/shatroopa.si/fg.seg?sdg'))
-#print(extractName('https://www.facebook.net'))
-#print(extractName('https://www.facebook.net/'))
-#print(extractName('https://www.facebook.net/shatroopa.si/'))
-

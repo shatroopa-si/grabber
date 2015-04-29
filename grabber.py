@@ -15,8 +15,6 @@ def grab(siteUrl):
 	# sort all the links & resources in decreasing order
 	variables.allPaths = variables.crawlFrontier + variables.resources
 	variables.allPaths.sort(reverse = True)
-	#variables.crawlFrontier.sort(reverse = True)
-	#variables.resources.sort(reverse = True)
 
 	#make a directory
 	try:
@@ -30,21 +28,13 @@ def grab(siteUrl):
 	for x in variables.allPaths:
 		saveFiles.save1(x, siteName)
 
-#	for x in variables.crawlFrontier:
-#		saveFiles.save1(x, siteName)
-
-	#next, download all resources
-#	for x in variables.resources:
-#		saveFiles.save1(x, siteName)
-
-
 #-----------DRIVER CODE-----------
 try:
 	#take input for home directory and switch to it
 
 	variables.homeDirectory = input('Enter the directory in which you want the site to be downloaded. \nIt must exist.>')
 
-	#in case nothing is specified, consider the current workin directory
+	#in case nothing is specified, consider the current working directory
 	if variables.homeDirectory == '':
 		variables.homeDirectory = os.getcwd()	
 

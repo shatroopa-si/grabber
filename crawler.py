@@ -55,7 +55,6 @@ def resource(plink, link, siteName):
 			link, toCrawl = genAbsoluteLink(plink, link)	#form absolute path
 			if toCrawl:
 				addLinkToResource(link)						#add link
-				#addDirectories(link, 'res')
 
 
 def extractParentLink(url):
@@ -139,8 +138,6 @@ def scanPage(url, siteName):
 					#absolute path
 					if siteName in link and 'mailto:' not in link and '#' not in link and 'javascript:' not in link:
 						addLinkToFrontier(link)									#add link
-						#addDirectories(link, 'link')
-
 
 					#relative path
 					elif siteName not in link:
@@ -151,8 +148,6 @@ def scanPage(url, siteName):
 							#add a proper url to be crawled in the crawl frontier list
 							if toCrawl and link != '' and 'mailto:' not in link and '#' not in link and 'javascript:' not in link:
 								addLinkToFrontier(link)
-								#addDirectories(link, 'link')
-
 
 				elif '<link' in line:
 					#resource exists
@@ -194,20 +189,3 @@ def crawlSite(siteUrl, siteName):
 		scanPage(url, siteName)
 
 		posLink += 1
-
-
-
-
-#try:
-#	print(crawlSite(variables.seed))
-#finally:
-#	print('Resources= ', variables.resources)
-#	print('links= ', variables.crawlFrontier)
-#print(extractParentLink('http://learnpythonthehardway.org'))
-#print(extractParentLink('http://learnpythonthehardway.org/'))
-#print(extractParentLink('http://learnpythonthehardway.org/gwyj'))
-#print(extractParentLink('http://learnpythonthehardway.org/sufw/geh/dsgf.sgd'))
-#print(extractParentLink('http://learnpythonthehardway.org/sgs.sgeg'))
-#print(extractParentLink('http://silive.in/favicon.ico'))
-
-
