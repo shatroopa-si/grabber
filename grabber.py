@@ -38,7 +38,8 @@ try:
 	if variables.homeDirectory == '':
 		variables.homeDirectory = os.getcwd()	
 
-	if variables.homeDirectory[:-1] != '/':
+	#must end with '/'
+	if variables.homeDirectory[-1] != '/':
 		variables.homeDirectory += '/'
 
 	os.chdir(variables.homeDirectory)
