@@ -2,9 +2,6 @@
 
 import urllib.request
 import variables
-import mapper
-import saveFiles
-
 
 def addLinkToFrontier(link):
 	"""adds an absolute link to crawl frontier avoiding redundancy"""
