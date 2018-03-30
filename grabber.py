@@ -1,7 +1,6 @@
 import variables
-import mapper
-import saveFiles
 import crawler
+import mapper
 import urllib.request
 import os
 
